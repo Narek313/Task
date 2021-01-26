@@ -1,0 +1,20 @@
+.dropdown-language{
+    width: 35px;
+    font-size: 7px;
+    list-style: none;
+    text-align: center;
+    padding-bottom: 8px;
+    background-color: #fff;
+    border: 1px solid rgb(228, 222, 222);
+    position: absolute;
+    top: 40px;
+}
+
+.dropdown-language li {
+    margin-top: 8px;
+}
+
+.dropdown-language li:hover {
+    background-color: rgb(207, 203, 203);
+    transition: 0.2s;
+}

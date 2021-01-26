@@ -1,0 +1,121 @@
+:root{
+    --primary-color: rgb(228, 222, 222);
+    --font-size: 8px;
+}
+
+nav {
+    width: 85vw;
+    height: 12vh;
+    background-color: #fff;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 2px 1px var(--primary-color);
+}
+
+.navbar-logo {
+    width: 10%;
+    cursor: pointer;
+    justify-self: start;
+}
+
+.navbar-menu {
+    width: 75%;
+    display: flex;
+    align-items: center;
+}
+
+.menu-search {
+    width: 190px;
+    height: 23px;
+    border-radius: 10px;
+    border: 1px solid var(--primary-color);
+}
+
+#search {
+    width: 85%;
+    height: 15px;
+    border: none;
+    outline: none;
+    margin: 0 5px;
+    font-size: var(--font-size);
+    padding: 5px 15px;
+    user-select: none;
+    color: rgb(161, 157, 157);
+    border-right: 1px solid var(--primary-color);
+}
+
+.fa-search {
+    font-size: 9px;
+    color: orangered;
+}
+
+.menu-items {
+    display: flex;
+    font-size: var(--font-size);
+    list-style: none;
+    margin-left: 10px;
+}
+
+.menu-items li {
+    cursor: pointer;
+    margin-right: 12px;
+}
+
+.profile {
+    font-size: var(--font-size);
+    display: flex;
+    align-items: center;
+}
+
+.profile-image{
+    width: 13px;
+    height: 13px;
+    margin-right: 3px;
+    border-radius: 50%;
+    background-image: url(./../img/profile-img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:top;
+}
+
+.shopping-cart {
+    margin-left: 20px;
+    color: red;
+    position: relative;
+    bottom: 2px;
+    left: 2px;
+}
+
+.fa-shopping-cart {
+    font-size: var(--font-size);
+}
+
+.smallCount {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: red;
+    color: #fff;
+    text-align: center;
+    font-size: 5px;
+    font-weight: 700;
+    padding-top: 0.5px;
+    position: absolute;
+    top: 4px;
+    left: 6px;
+    user-select: none;
+}
+
+.language {
+    font-size: var(--font-size);
+    margin-left: 12px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.fas, .profile-name{
+    cursor: pointer;
+    user-select: none;
+}

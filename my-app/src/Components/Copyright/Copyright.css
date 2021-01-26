@@ -1,0 +1,11 @@
+.copyright {
+    width: 75vw;
+    margin: 0 auto;
+    padding: 4px 0;
+}
+
+.copyright p {
+    text-align: center;
+    font-size: 7px;
+    color: rgb(179, 176, 176);
+}
