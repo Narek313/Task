@@ -1,6 +1,5 @@
 :root{
     --primary-color: rgb(228, 222, 222);
-    --font-size: 8px;
 }
 
 nav {
@@ -11,13 +10,22 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    box-shadow: 0 2px 1px var(--primary-color);
+    box-shadow: 0 4px 1px var(--primary-color);
+    min-width: 1100px;
+    min-height: 75px;
 }
 
 .navbar-logo {
     width: 10%;
     cursor: pointer;
-    justify-self: start;
+}
+
+.navbar-logo a {
+    width: 110px;
+    height: 55px;
+    display: block;
+    background: url(../logo/logo.png) no-repeat left top;
+    background-size: contain;
 }
 
 .navbar-menu {
@@ -27,19 +35,19 @@ nav {
 }
 
 .menu-search {
-    width: 190px;
-    height: 23px;
-    border-radius: 10px;
+    min-width: 325px;
+    height: 35px;
+    border-radius: 20px;
     border: 1px solid var(--primary-color);
 }
 
 #search {
-    width: 85%;
-    height: 15px;
+    width: 80%;
+    height: 25px;
     border: none;
     outline: none;
-    margin: 0 5px;
-    font-size: var(--font-size);
+    margin: 4px 16px;
+    font-size: 13px;
     padding: 5px 15px;
     user-select: none;
     color: rgb(161, 157, 157);
@@ -47,32 +55,32 @@ nav {
 }
 
 .fa-search {
-    font-size: 9px;
+    font-size: 15px;
     color: orangered;
 }
 
 .menu-items {
     display: flex;
-    font-size: var(--font-size);
+    font-size: 13px;
     list-style: none;
-    margin-left: 10px;
+    margin-left: 15px;
 }
 
 .menu-items li {
     cursor: pointer;
-    margin-right: 12px;
+    margin-right: 35px;
 }
 
 .profile {
-    font-size: var(--font-size);
+    font-size: 13px;
     display: flex;
     align-items: center;
 }
 
 .profile-image{
-    width: 13px;
-    height: 13px;
-    margin-right: 3px;
+    width: 25px;
+    height: 25px;
+    margin-right: 8px;
     border-radius: 50%;
     background-image: url(./../img/profile-img.jpg);
     background-size: cover;
@@ -81,7 +89,7 @@ nav {
 }
 
 .shopping-cart {
-    margin-left: 20px;
+    margin-left: 40px;
     color: red;
     position: relative;
     bottom: 2px;
@@ -89,33 +97,32 @@ nav {
 }
 
 .fa-shopping-cart {
-    font-size: var(--font-size);
+    font-size: 13px;
 }
 
 .smallCount {
-    width: 6px;
-    height: 6px;
+    width: 12px;
+    height: 12px;
     border-radius: 50%;
     background-color: red;
     color: #fff;
     text-align: center;
-    font-size: 5px;
+    font-size: 8px;
     font-weight: 700;
-    padding-top: 0.5px;
+    padding-top: 2px;
     position: absolute;
-    top: 4px;
-    left: 6px;
     user-select: none;
+    bottom: 12px;
+    left: 12px;    
 }
 
 .language {
-    font-size: var(--font-size);
-    margin-left: 12px;
-    cursor: pointer;
+    font-size: 13px;
+    margin-left: 20px;
     user-select: none;
 }
 
-.fas, .profile-name{
+.fas, .profile-name, .language span, .far{
     cursor: pointer;
     user-select: none;
 }

@@ -1,64 +1,57 @@
 .products {
     width: 75vw;
-    margin: 45px auto;
+    margin: 110px auto 90px;
+    min-width: 1000px;
 }
 
 .products h1 {
     color: #49B748;
     text-align: center;
-    font-size: 16px;
-    margin-bottom: 22px;
+    font-size: 28px;
+    margin-bottom: 50px;
 }
 
 .items {
     width: 100%;
     font-weight: 700;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 80px;
 }
 
 .items p {
-    font-size: 7px;
-    margin-left: 8px;
+    font-size: 13px;
+    margin-left: 10px;
+    height: 20px;
 }
 
-.item1 .cost {
-    margin-top: 25px;
-}
-
-.item3 .cost {
-    margin-top: 16px;
-}
-
-.item3 {
-    margin-right: 0 !important;
+.item1 {
+    position: relative;
 }
 
 .items .items-list {
-    margin-right: 30px;
-    height: 180px;
-    width: 20%;
+    height: 300px;
     border: 1px solid rgb(228, 222, 222);
-    border-radius: 3px;
+    border-radius: 8px;
+    position: relative;
 }
 
 .img {
     width: 100%;
     height: 50%;
-    margin-bottom: 8px;
 }
 
 .prevCost {
-    font-size: 8px;
+    margin-top: 15px;
+    height: 30px;
+    font-size: 13px;
     text-decoration: solid black line-through;
-    margin: 8px ;
 }
 
 .cost {
     color: orangered;
-    font-size: 10px;
-    margin-bottom: 10px;
+    font-size: 16px;
+    margin-bottom: 15px;
 }
 
 .items span {
@@ -66,37 +59,88 @@
     text-align: center;
 }
 
-.image0 {
-    background-image: url(../img/img-5.jpg);
-    background-size: cover;
+.img {
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+.image0 {
+    background-image: url(../img/img-5.jpg);
 }
 
 .image1 {
     background-image: url(../img/img-6.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
 .image2 {
     background-image: url(../img/img-1.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
 .image3 {
     background-image: url(../img/img-7.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+}
+
+.image4 {
+    background-image: url(../img/img-8.jpg);
+}
+
+.image5 {
+    background-image: url(../img/img-9.jpg);
+}
+
+.image6 {
+    background-image: url(../img/img-10.jpg);
+}
+
+.image7 {
+    background-image: url(../img/img-11.jpg);
+}
+
+.image8 {
+    background-image: url(../img/img-12.jpg);
+}
+
+.image9 {
+    background-image: url(../img/img-13.jpg);
+}
+
+.image10 {
+    background-image: url(../img/img-14.jpg);
+}
+
+.image11 {
+    background-image: url(../img/img-15.jpg);
 }
 
 .fa-registered {
-    font-size: 5px;
-    position: relative;
-    left: 204px;
-    top: 8px;
+    font-size: 8px;
+    position: absolute;
+}
+
+.btn-product {
+    outline: none;
+    border: none;
+    background-color: green;
+    color: rgb(223, 217, 217);
+    cursor: pointer;
+    padding: 5px 25px;
+    font-size: 12px;
+    margin: 25px auto;
+    border-radius: 8px;
+    display: block;
+}
+
+.btn-seeMore {
+    display: block;
+    outline: none;
+    cursor: pointer;
+    padding: 4px 20px;
+    font-size: 12px;
+    background-color: #fff;
+    color: green;
+    border: 1px solid green;
+    font-weight: 700;
+    margin: 35px auto;
+    border-radius: 10px;
 }

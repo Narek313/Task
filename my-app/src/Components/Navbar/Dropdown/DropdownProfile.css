@@ -1,18 +1,18 @@
 .dropdown-profile{
-    width: 60px;
-    font-size: 7px;
-    cursor: pointer;
+    width: 100px;
+    font-size: 13px;
     list-style: none;
     text-align: center;
-    padding-bottom: 8px;
     background-color: #fff;
     border: 1px solid rgb(228, 222, 222);
     position: absolute;
-    top: 40px;
+    top: 11vh;
+    padding-bottom: 10px;
 }
 
 .dropdown-profile li {
-    margin-top: 8px;
+    margin-top: 10px;
+    cursor: pointer;
 }
 
 .dropdown-profile li:hover {

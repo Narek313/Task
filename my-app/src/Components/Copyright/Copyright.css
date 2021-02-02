@@ -1,11 +1,12 @@
 .copyright {
     width: 75vw;
     margin: 0 auto;
-    padding: 4px 0;
+    padding: 8px 0;
+    min-width: 1000px;
 }
 
 .copyright p {
     text-align: center;
-    font-size: 7px;
+    font-size: 12px;
     color: rgb(179, 176, 176);
 }

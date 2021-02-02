@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { ContextProvider } from './MyContext'
 import './App.css'
 import Navbar from './Components/Navbar/Navbar'
 import Shopping from './Components/Shopping/Shopping'
@@ -10,11 +11,13 @@ export default class App extends Component {
   render() {
     return (
       <>
-        <Navbar/>
-        <Shopping/>
-        <Products/>
-        <Info/>
-        <Copyright/>
+        <ContextProvider>
+          <Navbar/>
+          <Shopping/>
+          <Products/>
+          <Info/>
+          <Copyright/>
+        </ContextProvider>
       </>
     )
   }
